@@ -88,5 +88,27 @@ TEST(PracticeTest, beautiful_disaster){
 	ASSERT_GT(first, second);
 	ASSERT_GT(first, third);
 	ASSERT_EQ(second, third);
-
+}
+TEST(PracticeTest, negative_nancy){
+	Practice obj;
+	int first = -3;
+	int second = -2;
+	int third = -1;
+	obj.sortDescending(first, second, third);
+	ASSERT_GT(first, second);
+	ASSERT_GT(first, third);
+	ASSERT_GT(second, third);
+}
+TEST(PracticeTest, Smashing_pumpkin_zero){
+	Practice obj;
+	int first = -1;
+	int second = 1;
+	int third = 0;
+	obj.sortDescending(first, second, third);
+	ASSERT_GT(first, second);
+	ASSERT_GT(first, third);
+	ASSERT_GT(second, third);
+	ASSERT_EQ(second, 0);
+	ASSERT_EQ(first, 1);
+	ASSERT_EQ(third, -1);
 }
