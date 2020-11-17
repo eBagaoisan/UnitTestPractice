@@ -29,8 +29,8 @@ TEST(PracticeTest, empty_palindrome){
 
 TEST(PracticeTest, not_a_palindrome){
 	Practice obj;
-	bool actual = obj.isPalindomre("Not a palindrome");
-	ASSERT_TRUE(actual);
+	bool actual = obj.isPalindrome("Not a palindrome");
+	ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, complex_palindrome){
